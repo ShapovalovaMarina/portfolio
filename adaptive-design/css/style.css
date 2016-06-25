@@ -1,0 +1,282 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #27292b;
+	color: #47494b;
+	font-family: Lato, ​Arial, ​sans-serif;
+	font-size: 13.01px;
+	font-weight: normal;
+	line-height: 1.2em;
+}
+
+.container {
+	position: relative;
+	width: 470px;
+	margin: 0 auto 60px auto;
+	padding: 0 20px;
+ }
+
+h1 {
+	color: #fff;
+	font-family: Montserrat, ​Arial, ​sans-serif;
+	font-size: 29px;
+	font-weight: 400;
+	margin: 38px 0  28px 0;
+	text-transform: uppercase;
+}
+
+hr {
+	background-color: #fff;
+	border: none;
+	margin-bottom: 33px;
+	height: 1px;
+	opacity: .15;
+}
+
+label {
+	display: block;
+	margin-top: -37px;
+}
+
+.field-block input,
+.field-block textarea {
+	background-color: #27292b;
+	border: 1px solid #47494b;
+	border-radius: 2px;
+	color: #fff;
+	float: left;
+	font-family: Lato, ​Arial, ​sans-serif;
+	font-size: 13.03px;
+	line-height: 1.2em;
+	margin-top: -19px;
+	outline: none;
+}
+
+.field-block input {
+	height: 40px;
+	margin-bottom: 5px;
+	padding: 0 10px;
+	width: 203px;
+}
+
+.field-block,
+.field-block div  {
+	display: inline-block;
+}
+
+.field-block {
+	margin-bottom: 37px;
+}
+
+.field-block.last {
+	margin-bottom: 12px;
+}
+
+.field-block:nth-child(2n) {
+	margin-left: 14px;
+}
+
+#school_organization {
+	background: url("../img/loupe.png") no-repeat 183px -33px;
+	padding-right: 35px;
+	width: 177px;
+}
+
+#phone-country,
+#phone-code {
+	width: 43px;
+}
+
+#phone-number {
+	width:67px;
+}
+
+#phone-code,
+#phone-number {
+	margin-left: 3px;
+}
+
+.field-block textarea {
+	height: 135px;
+	padding: 10px 10px;
+	width: 445px;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#agree {
+	margin: 16px 0 15px 0;
+}
+
+.button input{
+	background-color: #5d9f81;
+	border: none;
+	border-radius: 2px;
+	color: #fff;
+	font-family: Lato, ​Arial, ​sans-serif;
+	font-size: 13.01px;
+	height: 39px;
+	line-height: 1.2px;
+	margin-top: 14px;
+	padding: 10px 10px;
+	width: 127px;
+}
+
+.button {
+	display: inline-block;
+}
+
+.submit input:hover {
+	background-color: #6abd97;
+}
+
+.cancel input {
+	background-color: #27292b;
+	border: 1px solid #47494b;
+	border-radius: 2px;
+	color: #47494b;
+	font-family: Lato, ​Arial, ​sans-serif;
+	margin-left: 16px;
+	outline: none;
+}
+
+.cancel input:hover {
+	background-color: #47494b;
+	color: #fff;
+}
+
+.field-block.valid label,
+.field-block.valid input,
+.field-block.valid textarea {
+	color: #6abd97;
+	border-color: #6abd97;
+}
+
+.field-block.valid #school_organization {
+	background: url("../img/loupe.png") no-repeat 183px -119px;
+}
+
+.field-block.invalid input,
+.field-block.invalid textarea {
+	color: #fff;
+	border-color: #e7635e;
+}
+
+.field-block.invalid label{
+	color: #e7635e;
+}
+
+.field-block.invalid #school_organization {
+	background: url("../img/loupe.png") no-repeat 183px -76px;
+}
+
+.field-block input:focus,
+.field-block textarea:focus {
+	border:1px solid #fff;
+	color: #fff;
+}
+
+.field-block input:focus ~ label,
+.field-block textarea:focus + label {
+	color: #fff;
+}
+
+.field-block input:focus#school_organization {
+	background: url("../img/loupe.png") no-repeat 188px 5px;
+}
+
+@media (max-width: 600px) {
+
+		.container {
+			width: 330px; margin-bottom: 25px;
+		}
+
+		h1 {
+			margin: 25px 0  17px 0;
+		}
+
+		hr {
+			margin-bottom: 25px;
+		}
+
+		.field-block input {
+			width: 305px;
+			margin: 4px 0 -18px 0;
+		}
+
+		label {
+			margin-top: -16px;
+		}
+
+		.field-block:nth-child(2n) {
+			margin-left: 0;
+		}
+
+		.field-block textarea {
+			margin-top: 3px;
+			resize: none;
+			width: 305px;
+		}
+
+		#phone-country,
+		#phone-code {
+			width: 72px;
+		}
+
+		#phone-number {
+			width:111px;
+		}
+
+		#school_organization {
+			width: 280px;
+			background-position-x: 283px;
+		}
+
+		.button input {
+			width: 330px;
+		}
+
+		.cancel input {
+			margin-left: 0;
+		}
+
+		.field-block.valid #school_organization {
+			background-position-x: 283px;
+		}
+
+		.field-block.invalid #school_organization {
+			background-position-x: 283px;
+		}
+
+		.field-block input:focus#school_organization {
+			background-position-x: 288px;
+		}
+}
+
+@media (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
+
+		h1 {
+			display: none;
+		}
+}
+
+@media (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+
+		h1 {
+			color: #6abd97;
+		}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+
+		h1 {
+			color: #a54f4c;
+		}
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>REQUEST A DEMO</title>
+		<link href="css/style.css" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>Request a demo</h1>
+			<hr />
+				<form action="http://itcraft.com.ua/html-css-internship-2016-0439599340/form-controller.php" method="post">
+					<div class="field-block">
+						<input type="text" id="fist-name" name="form_data[first_name]" />
+						<label for="fist-name">First Name</label>
+					</div>
+					<div class="field-block">
+						<input type="text" id="last-name" name="form_data[last_name]" />
+						<label for="last-name">Last Name</label>
+					</div>
+					<div class="field-block">
+						<input type="text" id="email" name="form_data[email]" />
+						<label for="email">Email *</label>
+					</div>
+					<div class="field-block">
+						<div>
+							<input type="text" id="phone-country" name="form_data[phone][country]" />
+							<input type="text" id="phone-code" name="form_data[phone][code]" />
+							<input type="text" id="phone-number" name="form_data[phone][number]" />
+							<label for="phone-country">Phone Number</label>
+						</div>
+					</div>
+					<div class="field-block">
+						<input type="text" id="school_organization" name="form_data[school_organization]" />
+						<label for="school_organization">School/Organization *</label>
+					</div>
+					<div class="field-block">
+						<input type="text" id="role" name="form_data[role]" />
+						<label for="role">Role on Campus *</label>
+					</div>
+					<div class="field-block last">
+						<textarea id="goals" name="form_data[goals]"></textarea>
+						<label for="goals">What are your goals for DemoSystem? *</label>
+					</div>
+					<div>
+						<input type="checkbox" id="agree" name="agree" value="1" checked="checked" />I agree to the DemoSystem <a href="">Terms of Service</a> and <a href="">Privacy Policy</a>
+					</div>
+					<div class="button submit">
+						<input type="submit" value="Submit" />
+					</div>
+					<div class="button cancel">
+						<input type="submit" value="Cancel" />
+					</div>
+				</form>
+		</div>
+	</body>
+</html>
